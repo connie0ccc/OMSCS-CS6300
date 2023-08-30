@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:onClick="handleClick">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="#004CAF50"
+            android:gravity="bottom|center_horizontal"
+            android:text="Job Comparer"
+            android:textAlignment="center"
+            android:textColor="#6F6F6F"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/buttonCurrent"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:backgroundTint="#C4CCD7"
+            android:insetLeft="15dp"
+            android:insetRight="15dp"
+            android:onClick="handleClick"
+            android:text="Current Job" />
+
+        <Button
+            android:id="@+id/buttonNewOffer"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:backgroundTint="#C4CCD7"
+            android:insetLeft="15dp"
+            android:insetRight="15dp"
+            android:onClick="handleClick"
+            android:text="Job Offers" />
+
+        <Button
+            android:id="@+id/buttonCompare"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:backgroundTint="#C4CCD7"
+            android:insetLeft="15dp"
+            android:insetRight="15dp"
+            android:onClick="handleClick"
+            android:text="Compare Job offers" />
+
+        <Button
+            android:id="@+id/buttonSetting"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:backgroundTint="#C4CCD7"
+            android:insetLeft="15dp"
+            android:insetRight="15dp"
+            android:onClick="handleClick"
+            android:text="comparison settings" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
