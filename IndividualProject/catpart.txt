@@ -1,0 +1,60 @@
+# 	File
+	Size:
+		Empty.			[error]
+		Not Empty.	
+# Filename
+  The file idenfified by filename exists:
+      File exists.
+      File does not exists.         [error]		
+
+#	Arguments
+	-Occurrence of c in option:
+		One.				[property cpresent]
+		Many.				[property cpresent][single]
+		N/A.			
+	-c specification:
+		Upper or Lower.		[if cpresent]
+		Other String.		[if cpresent][error]
+		Not Present.		[if cpresent][error]
+	-Occurrence of e in option:
+		One.				[property epresent]
+		Many.				[property epresent][single]
+		N/A.			
+	-e specification:
+		No present. 			[if epresent][error]
+	 	﹣25 to 25.				[if epresent]
+		Out of Range.     		[if epresent][error]
+		Non-integer.			[if epresent][error]
+	-Occurrence of x in option:
+		One.				[property xpresent]
+		Many.				[property xpresent][single]
+		N/A.
+	-x specification:
+		Any Non-empty Value.		[if xpresent]
+		Not Present.			[if xpresent][error]
+
+	-Occurrence of s in option:				
+		One.				[if xpresent][error]
+						[else][property spresent]
+		Many.				[property spresent][single]
+		N/A.			
+		
+	-s specification:
+		0 or 1.				[if spresent]
+		Non-present.			[if spresent][error]
+		Out of Range.			[if spresent][error]
+
+	-Occurrence of a in option:
+		One.				[if epresent][error]
+						[else][property apresent]
+		N/A.	
+			
+	-Occurrence of p in option:
+		One.				[property ppresent]
+		Many.				[property ppresent][single]
+		N/A.			
+			
+	-p specification:
+		Any Non-empty Value.		[if ppresent]
+		" ". 					[if ppresent][error]
+		Not Present.			[if ppresent][error]
